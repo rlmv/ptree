@@ -37,8 +37,8 @@ def _split_id(id):
 
 
 def _encode(s):
-    if isinstance(id, unicode):
-        s = s.encode('utf-8')
+    # if isinstance(id, unicode):
+    #     s = s.encode('utf-8')
 
     s = _encode_regex.sub(_char2hex, s)
     parts = []
